@@ -25,4 +25,22 @@ You can start off using implicit types and then scale to explicit types and more
 - `subset` - this means the new class will only inherit functions from the base class 
 
 Inheritance in *tails* is designed to be super scalable, and meant to match you where you're at, it's also meant to give you more flexibility
+----------
+
+### Instance Methods (Functions) 
+
+an Instance Function is basically like a quick function, they are class indiscriminate meaning they don't require a class to wrap it to work in `tailslang` 
+
+``` Tails
+MyInstanceMethod() {} // this is now a function 
+
+class MyClass {
+
+MyClassInstanceMethod() {}
+
+
+}
+```
+for instance.
+--------------
 
