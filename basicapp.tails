@@ -1,0 +1,464 @@
+using "config"
+using "std"
+using "myclass" from "./myclass.tails"
+
+namespace std;
+
+class Types {
+
+    var // var is how you declare a mutable variable 
+    const // const is how you declare an immutable variable 
+    
+    // tails is a mixed typed type language, 
+
+    int, float, string, char // these are explicit types and can be used in the traditional C/C++ way but you can do implicit declaration via var or const
+
+    static // is how you declare a function 
+
+    static MyFunction() {...} // for instance 
+
+    class MyOverLoad {...}  // class nesting
+
+    // operands (operands means operators)
+
+    = //Simple Assignment 
+    == //Simple Comparison 
+    === //strictly equals (this applies to only strings and numbers)
+
+    <= // less than or equals to
+    => // more than or equals to
+
+    > // more than 
+
+    < // less than 
+
+    != // not equal 
+
+    !=== // strictly not equals 
+
+    - // substraction 
+    + // addition 
+
+    * // multiplication 
+
+    / // division 
+
+    += // compound assignment operator 
+
+    -= // compound assignment operator 
+
+    +== // compound comparison operator 
+
+    -== // compound comparison operator 
+
+    & // Literal AND -> this AND that, this is completed AND then that is completed 
+
+    && // Boolean AND -> This AND returns a boolean 
+
+    !&& // NAND 
+
+    &&& // Bitwise AND
+
+    // -----
+
+    | // Boolean OR
+
+    !| // NOR
+
+    ^ // XOR
+
+    || // Bitwise OR
+
+
+
+
+
+
+
+
+    
+
+   
+
+
+
+
+
+
+
+}
+
+class Math {
+
+    // tails follows bodmas
+
+    // implicit types: 
+
+    var i = 1 
+    var o = 2
+
+    i + o // 1 + 2, howevere if a bracket comes before it 
+
+    (i + o + 3 ) & i + o // 1 + 2 + 3 and then 1 + 2 again, it goes brackets - if no, division - if no, multipliction - if no, additon - if no, subtraction
+    
+    // explicit types, when declaring explicit types, you have to put a comma between them this is unlike implicit types 
+
+    int e = 10,
+    int o = 20,
+
+ 
+
+    i + o // 1 + 2, it's the same as implicit types 
+
+    // poly equations 
+
+    var iy = 100 
+    var ix = 200
+    var iz = 300
+    var yx = 30
+
+    const xi = 1000
+    const yi = 2000
+    const zi = 3000
+    
+
+    static MyEquastion() {
+
+        (iy * ix - 5 & xi * iz = yx) * (xi * yx -= 80 & ix) // bodmas here, brackets first then it mutiplies the resulting number of the first bracket with the resulting number of the next bracket
+        pow(ix, 2) + pow(yx, 3) * iz // indices aka power of, pow() is the function thats included inside of std library, we choose a starting number or variable and then put a comma and then say what we would like to power of that variable or literal number by
+
+        for->(i = 0; i < 10; i++) {
+           // do something
+        }
+
+
+
+
+
+    } 
+
+
+
+
+
+
+
+
+
+}
+
+// inheritence 
+
+class MyMath extends math {
+
+    //MyMath now inherits the values, function or other classes inside of the base class
+
+
+};
+
+class NewMath supersedes math {
+
+    //superceeds replaces the base class, instead of inheriting it replaces it
+
+
+};
+
+class BetterMath superset math {
+
+    //a superset inherits the values, functions or other classes inside of math while not sharing any changes back to the base class
+
+
+};
+
+class PoorMansMath subset math {
+
+    //a subset doesn't inherit anything but functions from the base class 
+
+
+
+};
+
+// comments
+
+// single line
+
+/*this
+is
+multi
+line
+comment
+*/
+
+/**
+ * this
+ * is
+ * a
+ * documentation 
+ * comment
+ */
+
+mdcomment(/*
+
+    # NOW YOU CAN USE MARKDOWN SYNTAX
+    ---
+    ## YAYAYAYAYAYAY!
+    
+    */)
+
+
+
+
+
+// config files 
+
+// tails is an intepreted language and it works like Java, and it uses a language server 
+
+// T2026 standard is the latest, and it adds: 
+
+/*
+1. superset and subset 
+2. removes the `function` keyword 
+3. adds explicit types
+4. adds class overloading and async functions 
+
+*/
+
+// async functions
+
+async static MyAsyncFunction() {
+
+    await = /*value*/ {
+        // do something 
+        co_await = /*value*/ {
+
+            // do something
+
+
+        }
+    }
+
+
+}
+
+// enums 
+
+enum MyEnum {
+    
+    1 = /*value*/,
+    2 = /*value */,
+
+    // and repeat
+
+
+}
+
+// interfaces 
+
+interface MyInterface {
+
+    // inside of interfaces is where you can wrap whole classes and function up, and use it like your own namespace of which namespace std is literally just interface std inside of the std.go file
+
+
+
+}
+
+// Generics 
+
+OBJECT MyObject[/*value*/] {
+    //do something
+}
+
+array MyArray = [
+
+    //fill in that array
+    //arrays can carry strings, variables or numbers
+    // for loops, can either hold a variable `i` or an array, and you can use a for loop to iterate through the array
+
+
+]
+
+Generic MyGeneric {
+// do something
+
+// the Generic keyword allows you to declare well whatever you want, it could be cho-cho trains or perhaps the eiffletower, it really doesn't matter-
+// it allows you to almost anything, it is the ultimate DIY keyword
+} 
+
+// flow control 
+
+if (/*condition*/) {/*do something*/} 
+
+// if else 
+
+if (/*condition*/) {
+
+    /*do something*/
+
+} else if (/*condition*/) {
+
+    /*do something*/
+
+} else {
+
+    // final check or something, else is reached if both conditionals evaluate at false 
+
+
+} 
+
+// hello world
+
+// works outside of a class 
+
+print("Hello, World")
+
+// newline shit
+
+print("Hello, World")
+print("I love TAILS") // newline is the literal next print, it becomes: 
+
+/*
+Hello, World
+I love TAILS
+*/
+
+// inside of a class 
+
+class HelloWorld {
+
+    print("HelloWorld")
+
+
+}
+
+// inside of a function 
+
+static HelloWorld() {
+
+    print("HelloWorld")
+
+
+}
+
+// inside of an Async Function 
+
+print("Helloworld")
+
+async static Helloworld() {
+    await print() {
+
+        print("I LOVE TAILS")
+        
+    }
+}
+
+// once the print above the async func completes it runs the async print
+
+// how to use compound comparison operators 
+
+if (val +== val) {...}
+
+// first it adds the two values together, i = 1 and o = 2 for instance, then you get your output and it's passed into the body, then it checks of i or o is null/uninit, if it is it pauses execution and throws an error
+
+// C parser
+
+class C_parser {
+
+    class C_Helpers {
+
+        int SL_linecount = 0,
+       
+
+
+    }
+
+    var C_IMPORTS = "#include" & "<...>"
+    
+    async static Imports() {
+        await = C_IMPORTS {
+
+            for->(SL_linecount = 0; SL_linecount => 10; i++) {
+
+              if (SL_linecount => 10) {
+
+                print(SL_linecount)
+
+
+              } else if (SL_linecount <= 10) {
+
+                print("Perhaps your include is malformed")
+
+
+              } else if (SL_linecount <= 5) {
+
+                print("Okay, your include is SERIOUSLY MALFORMED")
+
+
+              } else if (SL_linecount == 0) {
+
+                print("Okay What the fuck?!")
+
+
+              } else (SL_linecount == null) {
+
+                print("No includes present")
+
+
+              }
+                
+            }
+            
+        }
+    }
+
+   
+
+    
+
+
+    
+}
+
+// instance methods
+
+mymethod() {
+
+    //do something
+
+
+}
+
+// inside a class
+
+class Method {
+
+    myclassmethod() {
+
+        // do something
+
+
+    }
+
+
+}
+
+#CBinder({
+    #include <stdio.h>
+
+    int x = 10,
+
+    
+})
+
+// using existing code from another file
+
+class MYNEWCLASS {
+
+    myclass.helper() // thats it 
+
+}
+
+/*
+cruical point: if the symbol, var or function exists inside of the immediate file, you don't need to say [class].[function]
+you just say the function name, because all functions in tails, no matter how nested, are automatic in the file level namespace, 
+imported files, are from the import pool, so you have to use the [class].[function] syntax like in JS/TS
+*/
