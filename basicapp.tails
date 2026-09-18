@@ -1,6 +1,7 @@
 using "config"
 using "std"
 using "myclass" from "./myclass.tails"
+using "std::interop"; // std now has multiple libraries and is Battery Included and that how you access it, the generic `std` is just IO
 
 namespace std;
 
@@ -45,11 +46,7 @@ class Types {
 
     += // compound assignment operator 
 
-    -= // compound assignment operator 
-
-    +== // compound comparison operator 
-
-    -== // compound comparison operator 
+    -= // compound assignment operator  
 
     & // Literal AND -> this AND that, this is completed AND then that is completed 
 
@@ -61,13 +58,17 @@ class Types {
 
     // -----
 
-    | // Boolean OR
+    || // Boolean OR
 
     !| // NOR
 
     ^ // XOR
 
-    || // Bitwise OR
+    | // Bitwise OR
+
+// operator oveloading is allowed
+
+
 
 
 
