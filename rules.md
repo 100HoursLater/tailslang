@@ -7,7 +7,7 @@
 ### Add/Addition Operator: 
 
 #### Example: 
-`value1 + value2` -> here we are adding `value1`'s value to `value2`'s value, so if `value1` = 1, and `value2` = 2, it does `3 + 3`
+`value1 + value2` -> here we are adding `value1`'s value to `value2`'s value, so if `value1` = 1, and `value2` = 2, it does `1 + 2`
 
 ---
 
