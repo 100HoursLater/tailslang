@@ -1,7 +1,6 @@
 using "config"
 using "std"
 using "myclass" from "./myclass.tails"
-using "std::interop"; // std now has multiple libraries and is Battery Included and that how you access it, the generic `std` is just IO
 
 namespace std;
 
@@ -60,11 +59,12 @@ class Types {
 
     || // Boolean OR
 
-    !| // NOR
-
     ^ // XOR
 
     | // Bitwise OR
+
+//----------
+!/*variable*/ //NOT 
 
 // operator oveloading is allowed
 
@@ -210,9 +210,8 @@ mdcomment(/*
 
 
 
-// config files 
 
-// tails is an intepreted language and it works like Java, and it uses a language server 
+// tails is a VM language and it works like Java, and it uses a language server 
 
 // T2026 standard is the latest, and it adds: 
 
@@ -228,14 +227,8 @@ mdcomment(/*
 
 async static MyAsyncFunction() {
 
-    await = /*value*/ {
-        // do something 
-        co_await = /*value*/ {
-
-            // do something
-
-
-        }
+    await /*value*/ {
+        // do something
     }
 
 
