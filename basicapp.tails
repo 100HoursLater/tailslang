@@ -347,11 +347,6 @@ async static Helloworld() {
 
 // once the print above the async func completes it runs the async print
 
-// how to use compound comparison operators 
-
-if (val +== val) {...}
-
-// first it adds the two values together, i = 1 and o = 2 for instance, then you get your output and it's passed into the body, then it checks of i or o is null/uninit, if it is it pauses execution and throws an error
 
 // C parser
 
@@ -451,8 +446,3 @@ class MYNEWCLASS {
 
 }
 
-/*
-cruical point: if the symbol, var or function exists inside of the immediate file, you don't need to say [class].[function]
-you just say the function name, because all functions in tails, no matter how nested, are automatic in the file level namespace, 
-imported files, are from the import pool, so you have to use the [class].[function] syntax like in JS/TS
-*/
