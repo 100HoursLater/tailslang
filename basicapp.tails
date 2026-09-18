@@ -6,6 +6,9 @@ namespace std;
 
 class Types {
 
+    ++ // interator up 
+    -- // interator down
+
     var // var is how you declare a mutable variable 
     const // const is how you declare an immutable variable 
     
