@@ -105,7 +105,7 @@ result = a | b
 #### Example: 
 `if !(x || b) {...}` -> implicit boolean here, it only returns true if both operations are false
 
-<u>***operator overloading is allowed***</u>
+<u>***operator overloading is not allowed***</u>
 
 -------
 
