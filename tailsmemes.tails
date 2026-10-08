@@ -1,0 +1,73 @@
+using "std";
+
+interface com 
+{
+ class Enterprise
+ {
+    class MyCompany 
+    {
+        class MyDepartment 
+        {
+            class MyTeam
+            {
+                class MyProject 
+                {
+                    class Module 
+                    {
+                        class SubModule 
+                        {
+                          class Util 
+                          {
+                            class Helper 
+                            {
+                                class Factory 
+                                {
+                                    class Builder 
+                                    {
+                                        static AbstractBuildMachine() 
+                                        {
+                                            BuildMachineImpl() 
+                                            {
+
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+
+                          }
+
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+ }
+}
+
+// what this looks like: com.Enterprise.MyCompany.MyDepartment.MyTeam.MyProject.Module.SubModule.Util.Helper.Factory.Builder.AbstractBuildMachine().BuildMachineImpl()
+
+//<------------>
+
+1 + 1 // legal
+
+var x = 1;
+
+x + 1 // legal 
+
+const y = 1
+
+y + 1 // illegal, constant types cannot be messed with out of functions 
+
+[] + [] === "" // illegal, because wtf 
+
+array xu = [1] 
+array yu = [1]
+
+xu + yu === 1 //legal, it evaluates as false, because it becomes 2 
