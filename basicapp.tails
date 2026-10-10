@@ -66,10 +66,13 @@ class Types {
 
     | // Bitwise OR
 
-//----------
-!/*variable*/ //NOT 
+ //----------
+ !/*variable*/ //NOT
 
-// operator oveloading is allowed
+ // ----------
+   % // Modulus
+
+ // operator oveloading is not allowed
 
 
 
@@ -436,7 +439,7 @@ class Method {
 #CBinder({
     #include <stdio.h>
 
-    int x = 10,
+    int x = 10
 
     
 })
@@ -448,4 +451,3 @@ class MYNEWCLASS {
     myclass.helper() // thats it 
 
 }
-
