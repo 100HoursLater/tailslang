@@ -76,7 +76,7 @@
 ---
 ### NAND: 
 #### Example:
-`var result = (x > 2) !&& (x > 2)` -> checks if both operations are NOT greater than 2 
+`var result = (x > 2) !&& (x > 2)` -> returns false with both are true
 
 ---
 ### Bitwise AND: 
