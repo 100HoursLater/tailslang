@@ -1,0 +1,25 @@
+using "std"
+
+class OBJECTs {
+
+
+// passing variables through OBJECT signature
+OBJECT coordinate[var x, var y] {
+ x = 10
+ y = 10
+
+};
+
+player1 = coordinate[10,20]
+
+// not passing variables
+OBJECT coordinata[] {
+var x = 10
+var y = 10
+
+};
+
+player1 = playerarr[coordinata.x, coordinata.y];
+playerarr[10,10] // this passes those values into the OBJECT at runtime 
+
+}
