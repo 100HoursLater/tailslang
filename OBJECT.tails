@@ -1,5 +1,7 @@
 using "std"
 
+// OBJECTs are structified arrays
+
 class OBJECTs {
 
 
