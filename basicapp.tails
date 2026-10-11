@@ -263,7 +263,7 @@ enum MyEnum {
 
 interface MyInterface {
 
-    // inside of interfaces is where you can wrap whole classes and function up, and use it like your own namespace of which namespace std is literally just interface std inside of the std.go file
+    
 
 
 
