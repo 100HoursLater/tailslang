@@ -104,7 +104,7 @@ class Math {
     var i = 1 
     var o = 2
 
-    i + o // 1 + 2, howevere if a bracket comes before it 
+    i + o // 1 + 2, howevere if a bracket comes bee it 
 
     (i + o + 3 ) & i + o // 1 + 2 + 3 and then 1 + 2 again, it goes brackets - if no, division - if no, multipliction - if no, additon - if no, subtraction
     
@@ -134,9 +134,16 @@ class Math {
         (iy * ix - 5 & xi * iz = yx) * (xi * yx -= 80 & ix) // bodmas here, brackets first then it mutiplies the resulting number of the first bracket with the resulting number of the next bracket
         pow(ix, 2) + pow(yx, 3) * iz // indices aka power of, pow() is the function thats included inside of std library, we choose a starting number or variable and then put a comma and then say what we would like to power of that variable or literal number by
 
+
+        // variable
         for->(i = 0; i < 10; i++) {
            // do something
         }
+        // arrays
+        for->(i = 0; i < MyArray.length; i++) {
+         // do something
+        }
+    
 
 
 
