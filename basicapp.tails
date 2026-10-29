@@ -29,7 +29,7 @@ class Types {
     === //strictly equals (this applies to only strings and numbers)
 
     <= // less than or equals to
-    => // more than or equals to
+    >= // more than or equals to
 
     > // more than 
 
@@ -378,9 +378,9 @@ class C_parser {
     async static Imports() {
         await = C_IMPORTS {
 
-            for->(SL_linecount = 0; SL_linecount => 10; i++) {
+            for->(SL_linecount = 0; SL_linecount >= 10; i++) {
 
-              if (SL_linecount => 10) {
+              if (SL_linecount >= 10) {
 
                 print(SL_linecount)
 
