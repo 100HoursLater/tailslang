@@ -51,7 +51,7 @@
 ---
 ### More than Equals Operator:
 #### Example: 
-`if (2 => 1) {...}` -> (a lil deviation from the C standards, it was high time that was fixed (tf is `>=` bru?), implicit boolean, self explanatory
+`if (2 >= 1) {...}` implicit boolean, self explanatory
 
 ---
 ### add compound operator:
